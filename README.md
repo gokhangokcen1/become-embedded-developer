@@ -2,11 +2,12 @@
 BUILD. BREAK. UNDERSTAND. 
 
 # Table of contents 
-> C programming
-> Operating Systems (OSTEP)
-> Embedded
-    > ESP32
-    > STM32
+- C programming
+- Operating Systems (OSTEP)
+- Embedded
+    - ESP32
+    - STM32
+
 # Roadmap Özeti
 
 ```text
