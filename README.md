@@ -7,6 +7,7 @@ BUILD. BREAK. UNDERSTAND.
 - Embedded
     - ESP32
     - STM32
+- Web App Sec
 
 # Roadmap Özeti
 
