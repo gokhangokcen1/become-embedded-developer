@@ -46,16 +46,16 @@ Bir ana kaynak seç → çalış → proje yap → takıldığında dokümantasy
 
 ### Kullanacağım ana kaynaklar
 
-| Alan       | Ana kaynak                                               |
-| ---------- | -------------------------------------------------------- |
-| C          | **Fehmi Uyar — C Programlama ve Algoritma Mantığı**      |
-| C++        | **Fehmi Uyar — C++ Eğitim Seti**                         |
-| OS         | **OSTEP — Operating Systems: Three Easy Pieces**         |
-| Networking | **Computer Networking: A Top-Down Approach**             |
-| ROS2       | **Taha Eren Karakış — Sıfırdan ROS2**                    |
-| Embedded   | **ESP-IDF resmi dokümantasyonu + proje yaparak öğrenme** |
-| Linux      | **Kullanarak + man pages**                               |
-| Gazebo     | **ROS2/Gazebo dokümantasyonu + proje**                   |
+| Alan       | Ana kaynak                                               | Yardımcı kaynak | 
+| ---------- | -------------------------------------------------------- | ----------------|
+| C          | **Fehmi Uyar — C Programlama ve Algoritma Mantığı**      | Modern Embedded Systems Programming Course |
+| C++        | **Fehmi Uyar — C++ Eğitim Seti**                         | Kemal Bıçakçı - Veri iletişimi ve Bilgisayar Ağları dersleri |
+| OS         | **OSTEP — Operating Systems: Three Easy Pieces**         | Kemal Bıçakçı - İşletim Sistemleri dersleri |
+| Networking | **Computer Networking: A Top-Down Approach**             | |
+| ROS2       | **Taha Eren Karakış — Sıfırdan ROS2**                    | |
+| Embedded   | **ESP-IDF resmi dokümantasyonu + proje yaparak öğrenme** | |
+| Linux      | **Kullanarak + man pages**                               | |
+| Gazebo     | **ROS2/Gazebo dokümantasyonu + proje**                   | |
 
 ## Şimdilik izlemeyeceğim / çalışmayacağım
 
