@@ -1,0 +1,38 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+
+void matrixPrint(int Row, int Column, int matrix[Row][Column]);
+
+int main(){
+
+    int Row, Column, i, j;
+    printf("enter number of rows:");
+    scanf("%d", &Row);
+    printf("enter number of columns:");
+    scanf("%d", &Column);
+
+    int matrix[Row][Column];
+
+    for(i=0;i<Row;i++){
+        for(j=0;j<Column;j++){
+            printf("matrix[%d][%d]: ", i, j);
+            scanf("%d", &matrix[i][j]);
+        }}
+
+    matrixPrint(Row, Column, matrix);
+
+
+    return 0;
+}
+
+void matrixPrint(int Row, int Column, int matrix[Row][Column]){
+
+    for(int i=0; i<Row;i++){
+        for(int j=0; j<Column; j++){
+            printf("%d ", matrix[i][j]);
+        }
+        printf("\n");
+    }
+    printf("\n");
+}
