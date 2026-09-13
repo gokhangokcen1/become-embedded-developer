@@ -236,3 +236,86 @@ Bir iş gerçekten gerektiriyorsa öğrenilir.
 |Embedded|[**Modern Embedded Systems Programming Course - Quantum Leaps**](https://www.youtube.com/playlist?list=PLPW8O6W-1chwyTzI3BHwBLbGQoPFxPAPM) |**ESP-IDF resmi dokümantasyonu + wokwi STM32** |
 |Linux|**Kullanarak + man pages**| |
 |ROS2 - Gazebo|[**ROS2 Tutorials (Basic to Advanced Simulation) - Kevin Wood**](https://www.youtube.com/playlist?list=PLSK7NtBWwmpTS_YVfjeN3ZzIxItI1P_Sr)| |
+
+## Projeler
+
+### C (Fehmi Uyar + Low-Level C sonrası)
+* [CLI Todo Manager](01-C/01-todo-manager)
+```
+1. Add task
+2. List tasks
+3. Complete task
+4. Delete task
+5. Save
+6. Load
+0. Exit
+```
+* [Dynamic Array](01-C/02-dynamic-array)
+```
+typedef struct {
+    int *data;
+    size_t size;
+    size_t capacity;
+} Vector;
+
+vector_init()
+vector_push()
+vector_pop()
+vector_get()
+vector_set()
+vector_remove()
+vector_free()
+gibi fonksiyonlar yaz.
+
+
+Öğrenilecekler:
+Bu memory kimin?
+Ne kadar büyük?
+Ne zaman büyüyecek?
+Ne zaman free edilecek?
+Pointer geçerli mi?
+realloc başarısız olursa ne olacak?
+
+```
+
+* [Mini Shell](01-C/04-mini-shell)
+```
+myshell> ls
+myshell> pwd
+myshell> echo hello
+myshell> cd ..
+myshell> exit
+
+myshell> ls | grep txt
+
+Öğrenilecekler: 
+fork()
+exec()
+wait()
+process
+file descriptor
+pipe
+dup2()
+signals
+```
+* [Memory Allocator](01-C/05-memory-allocator)
+```
+my_malloc()
+my_free()
+
+void *p = my_malloc(100);
+...
+my_free(p);
+
+
+```
+
+### Embedded (ESP-IDF)
+* [ESP32 Device Monitor](02-embedded-mcu/esp32-device-monitor)
+```
+Sensor/Device Monitor
+Temperature: 24.6 C
+Voltage:      3.28 V
+Status:       OK
+Uptime:       1532 s
+```
