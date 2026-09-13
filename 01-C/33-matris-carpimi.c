@@ -3,7 +3,6 @@
 
 int main() {
     int x[MAX_SIZE][MAX_SIZE], y[MAX_SIZE][MAX_SIZE], result[MAX_SIZE][MAX_SIZE];
-    int i, j, k, sum;
     int xrows, xcolumns, yrows, ycolumns;
 
     printf("x matrisinin satir ve sutununu gir: ");
@@ -15,19 +14,18 @@ int main() {
     readMatrix(yrows, ycolumns, y);
 
     if (xcolumns != yrows) {
-        printf("Carpma islemi yapilamaz: x'in sutun sayisi y'nin satir sayisina esit olmali.\n");
+        printf("Carpma yapilamaz.\n");
     } else {
-        for (i = 0; i < xrows; i++) {
-            for (j = 0; j < ycolumns; j++) {
-                sum = 0;
-                for (k = 0; k < xcolumns; k++) {
+        for (int i = 0; i < xrows; i++) {
+            for (int j = 0; j < ycolumns; j++) {
+                int sum = 0;
+                for (int k = 0; k < xcolumns; k++) {
                     sum += x[i][k] * y[k][j];
                 }
                 result[i][j] = sum;
             }
         }
-
-        printf("Sonuc matrisi:\n");
+        printf("Sonuc:\n");
         printMatrix(xrows, ycolumns, result);
     }
 
