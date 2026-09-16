@@ -1,10 +1,27 @@
 #include <iostream>
 #include <string>
-// constructor/destructor + inheritance
-// [TODO]:  Robot'tan miras alan `MobileRobot` sınıfı oluştur 
-//          - Ek olarak wheel_count_ değişkeni olacak (name, battery, speed, wheel_count)
-//          - `print_mobile_status()` methodu olacak
+/* 
+    [TODO] Inheritance
+        - Robot'tan miras alan `MobileRobot` sınıfı oluştur 
+        - Ek olarak wheel_count_ değişkeni olacak (name, battery, speed, wheel_count)
+        - `print_mobile_status()` methodu olacak
+    
+    
+    [TODO] Destructor
+        - Sensor sınıfı oluştur
+        - içerisinde name_ olacak
+        - Sensor("Lidar") şeklinde çalışıp çıktı olarak -> Sensor destroyed: Lidar
+        - print_status() methodu olacak.
+            Sensor lidar("Lidar");
+            lidar.print_status();
 
+            Sensor created: Lidar
+            Sensor: Lidar
+            Sensor destroyed: Lidar
+
+
+
+*/
 
 
 class Robot {
