@@ -1,7 +1,5 @@
 ## Proje 1 — Sensör Veri Günlükleyici (Sensor Data Logger)
 
-**Seviye:** Başlangıç | **Süre tahmini:** 3-5 saat
-
 ### Ne inşa ediyorsun?
 Sahte (simüle edilmiş) sıcaklık, batarya ve mesafe sensörlerinden periyodik olarak veri "okuyan", bu veriyi ekrana biçimlendirilmiş şekilde yazdıran ve bir dosyaya kaydeden bir konsol programı.
 
