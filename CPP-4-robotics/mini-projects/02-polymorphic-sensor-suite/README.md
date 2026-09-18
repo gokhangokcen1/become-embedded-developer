@@ -1,7 +1,5 @@
 ## Proje 2 — Çok Sensörlü Robot Sınıf Hiyerarşisi (Polymorphic Sensor Suite)
 
-**Seviye:** Orta | **Süre tahmini:** 6-8 saat
-
 ### Ne inşa ediyorsun?
 Farklı sensör tiplerini (mesafe, sıcaklık, IMU) **ortak bir arayüzden** yöneten, polymorphism kullanan bir sensör yönetim sistemi. Bu proje, Proje 1'in "tek tip veri" yaklaşımını, gerçek robotlardaki gibi **birbirinden çok farklı sensörleri** tek bir sistemde toplamaya genişletir.
 
