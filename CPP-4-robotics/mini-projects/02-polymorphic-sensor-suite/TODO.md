@@ -14,7 +14,7 @@ Farklı sensör tiplerini (mesafe, sıcaklık, IMU) **ortak bir arayüzden** yö
 - **Exception handling (Bölüm 8.3):** Bir sensör "bağlantı hatası" simüle ettiğinde (örn. `%5` ihtimalle rastgele) bunu `throw`/`catch` ile yönetmek.
 
 ### TODO Listesi
-- [ ] Soyut temel sınıfı tanımla:
+- [ X ] Soyut temel sınıfı tanımla:
   ```cpp
   class Sensor {
   public:
@@ -24,15 +24,10 @@ Farklı sensör tiplerini (mesafe, sıcaklık, IMU) **ortak bir arayüzden** yö
   };
   ```
 - [ X ] `DistanceSensor : public Sensor` yaz — `read()` metodu 0.1-5.0 metre arası rastgele bir değer döndürsün.
-- [ ] `TemperatureSensor : public Sensor` yaz — `read()` metodu 15-35°C arası değer döndürsün.
-- [ ] `ImuSensor : public Sensor` yaz — `read()` metodu -180 ile 180 derece arası bir yönelim (heading) açısı döndürsün.
-- [ ] `%5` ihtimalle (rastgele sayı ile kontrol et) her sensörün `read()` metodu `std::runtime_error("Sensor disconnected: " + get_name())` fırlatsın.
-- [ ] `main()` içinde `std::vector<std::unique_ptr<Sensor>> sensors;` oluştur, `make_unique` ile 1 `DistanceSensor`, 1 `TemperatureSensor`, 1 `ImuSensor` ekle.
-- [ ] Bir döngüde tüm sensörleri sırayla oku; her okumayı `try`/`catch` içine al — hata olursa "Sensör X bağlantısı koptu, atlanıyor" yazdır, program çökmesin.
-- [ ] Başarılı okumaları bir `std::map<std::string, double>` içinde en son değer olarak tut (`sensor_name → last_value`).
-- [ ] Programın sonunda tüm sensörlerin **son bilinen değerlerini** `map`'ten okuyup özet halinde yazdır.
-
-### Zorlaştırma
-- [ ] `Sensor` sınıfına `virtual void calibrate(double offset)` ekle, her sensör tipi bunu farklı şekilde uygulasın.
-- [ ] Sensörleri isimle aramak için `find_sensor_by_name(const std::string& name)` fonksiyonu yaz (döngüyle `vector` içinde arama yapmalısın).
-- [ ] Neden `unique_ptr` kullandığını, `shared_ptr` kullansaydın ne değişirdi diye README'ne bir paragraf yaz (gerçekten düşün, kopyalama).
+- [ X ] `TemperatureSensor : public Sensor` yaz — `read()` metodu 15-35°C arası değer döndürsün.
+- [ X ] `ImuSensor : public Sensor` yaz — `read()` metodu -180 ile 180 derece arası bir yönelim (heading) açısı döndürsün.
+- [ X ] `%5` ihtimalle (rastgele sayı ile kontrol et) her sensörün `read()` metodu `std::runtime_error("Sensor disconnected: " + get_name())` fırlatsın.
+- [ X ] `main()` içinde `std::vector<std::unique_ptr<Sensor>> sensors;` oluştur, `make_unique` ile 1 `DistanceSensor`, 1 `TemperatureSensor`, 1 `ImuSensor` ekle.
+- [ X ] Bir döngüde tüm sensörleri sırayla oku; her okumayı `try`/`catch` içine al — hata olursa "Sensör X bağlantısı koptu, atlanıyor" yazdır, program çökmesin.
+- [ X ] Başarılı okumaları bir `std::map<std::string, double>` içinde en son değer olarak tut (`sensor_name → last_value`).
+- [ X ] Programın sonunda tüm sensörlerin **son bilinen değerlerini** `map`'ten okuyup özet halinde yazdır.
