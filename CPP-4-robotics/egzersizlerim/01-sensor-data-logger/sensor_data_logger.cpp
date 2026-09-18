@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include <map>
 #include <chrono>
 #include <random>
 #include <ctime>
@@ -9,6 +8,10 @@
 #include <thread>
 #include <fstream>
 
+/**
+ * @brief Sensor gave 4 information and we keep these variable in a struct: sensor_name, value, unit, timestamps.
+ * 
+ */
 struct SensorReading {
     std::string sensor_name;
     double value;
@@ -17,7 +20,12 @@ struct SensorReading {
 };
 
 
-
+/**
+ * @brief Generating fake sensor datas. 
+ * 
+ * @param sensor_name 
+ * @return SensorReading 
+ */
 SensorReading generate_fake_reading(const std::string& sensor_name) {
     SensorReading reading;
     reading.sensor_name = sensor_name;
@@ -47,7 +55,11 @@ SensorReading generate_fake_reading(const std::string& sensor_name) {
     return reading;
 }
 
-
+/**
+ * @brief Write all the fake sensor datas to sensor_logs.txt : sensor_name value unit timestamp_seconds
+ * 
+ * @param log 
+ */
 void writeLog(const std::vector<SensorReading>& log) {
     std::ofstream output_file("sensor_logs.txt");
     if (!output_file.is_open()) {
@@ -60,6 +72,7 @@ void writeLog(const std::vector<SensorReading>& log) {
     }
     output_file.close();
 }
+
 
 int main() {
     
