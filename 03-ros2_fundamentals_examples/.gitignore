@@ -1,0 +1,9 @@
+build/
+install/
+log/
+.vscode/
+*.VC.DB
+*.VC.DB-shm
+*.VC.DB-wal
+__pycache__/
+*.pyc

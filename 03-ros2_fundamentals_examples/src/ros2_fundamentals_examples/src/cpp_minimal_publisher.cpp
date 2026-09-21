@@ -42,12 +42,12 @@ public:
      * the "/cpp_example_topic" topic and initializes a timer to call
      * the timerCallback method.
      */
-    MinimalCppPublisher() : Node("minimal_cpp_publisher"), count_(0)
+    MinimalCppPublisher() : Node("minimal_cpp_publisher"), count_(0) // node ismi
     {
         // Create a publisher object for sending string messages
         // with a queue size of 10.
         publisher_ = create_publisher<std_msgs::msg::String>(
-          "/cpp_example_topic", 10);
+          "/cpp_example_topic", 10); // topic name
  
         // Set up a timer to call the timerCallback function
         timer_ = create_wall_timer(500ms,
@@ -89,9 +89,10 @@ private:
  * Initializes the ROS 2 system and runs the minimal_cpp_publisher node.
  * It keeps the node alive until it is manually terminated.
  */
+
+#ifndef TESTING_EXCLUDE_MAIN
 int main(int argc, char * argv[])
 {
- 
   // Initialize ROS 2.
   rclcpp::init(argc, argv);
  
@@ -105,3 +106,4 @@ int main(int argc, char * argv[])
   // End of program.
   return 0;
 }
+#endif

@@ -1,5 +1,6 @@
 {
   "ROS2.distro": "jazzy",
+  "cmake.sourceDirectory": "/home/g0kh4n/desktop/istikbal/ros2_ws/src/ros2_fundamentals_examples",
   "python.autoComplete.extraPaths": [
     "/opt/ros/jazzy/opt/gz_sim_vendor/lib/python",
     "/opt/ros/jazzy/opt/sdformat_vendor/lib/python",
