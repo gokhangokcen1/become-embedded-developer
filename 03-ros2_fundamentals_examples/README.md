@@ -10,6 +10,8 @@ Değiştirilecek dosyalar:
 - `package.xml`
 
 # PUBLISHER 
+![Flow](pics_for_github/ros2_publisher_flow.png)
+
 Bizim topladığımız verileri belirli bir topic kanalı üzerinden broadcast yayınlayan node.
 1. gerekli kütüphaneleri include etmek 
    1. rclcpp/rclcpp.hpp 
@@ -32,7 +34,10 @@ Bizim topladığımız verileri belirli bir topic kanalı üzerinden broadcast y
    3. `spin(node_adı)`
    4. `rclcpp::shutdown();` 
 
+# SUBSCRIBER
 
+
+# GTEST
 
 
 
